@@ -1,0 +1,15 @@
+@popup-alfa-color: 70;
+@popup-body-color : fade(rgb(255,255,255), @popup-alfa-color);
+@popup-text-color : fade(rgb(0,0,0), @popup-alfa-color);
+@header-bgr-color : fade(rgb(0,0,100), @popup-alfa-color);
+body{
+	padding: 0;
+	margin: 0;
+	background: url(/img/wood_bg.jpg);
+}
+.aScale(@time){	
+     -webkit-transition: transform @time ease-out;
+     -moz-transition: transform @time ease-out;
+     -o-transition: transform @time ease-out;
+     transition: transform @time ease-out;
+}

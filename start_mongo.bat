@@ -1,0 +1,1 @@
+mongo ds049171.mongolab.com:49171/mylab -u mylab -p qwerty

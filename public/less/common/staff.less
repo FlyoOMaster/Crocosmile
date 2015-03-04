@@ -1,0 +1,20 @@
+@popup-alfa-color: 85;
+@popup-body-color : fade(rgb(255,255,255), @popup-alfa-color);
+@popup-text-color : fade(rgb(0,0,0), 255);
+@header-bgr-color : fade(rgb(0,0,100), @popup-alfa-color);
+
+.popup{
+	position: absolute;
+    width: 250px;
+	padding: 10px;
+	background-color: @popup-body-color;
+    opacity:0;
+	border-radius: 17px 17px 17px 17px;
+	-moz-border-radius: 17px 17px 17px 17px;
+	-webkit-border-radius: 17px 17px 17px 17px;
+	border: 0px solid #000000;
+    p{
+        color:@popup-text-color;
+        margin: 0;
+    }
+}

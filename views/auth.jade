@@ -1,0 +1,16 @@
+extends layout/main
+block css   
+    link(rel="stylesheet", type="text/css", href="css/auth.css")
+block js
+  script(type="application/javascript", src="js/auth.js")
+block content
+  .container
+      .form-signin
+        h4.form-signin-heading Введите логин и пароль
+        input#login.form-control(type="text", placeholder="Login address", required="", autofocus="")
+        input#password.form-control(type="password", placeholder="Password", required="")
+        label#isRemember.checkbox
+          input(type="checkbox", value="remember-me")
+          | Remember me
+        button.btn.btn-default.btn-block#submit Sign in
+        

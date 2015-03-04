@@ -1,0 +1,26 @@
+extends layout/main
+block navbar
+  include layout/navbar
+block css
+  link(rel='stylesheet', href="/css/index.css")
+block js
+  script(src="/vendor/socket.io-client/socket.io.js")
+  script(type='text/javascript').  
+    var user = !{JSON.stringify(user)} 
+  script(src="/js/index.js")    
+block content
+  .container
+    #play-ground.row
+      h1 canvas
+    #chat-ground.row.form-group
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            #textArea.form-control
+              #messages
+              
+        .row
+          .col-lg-10.col-md-10.col-sm-10.col-xs-12
+            input#inputMsg(type="text", placeholder="Type here").form-control
+          .col-lg-2.col-md-2.col-sm-2.col-xs-12
+            input#sendMsg(type="button", value="Send").btn
